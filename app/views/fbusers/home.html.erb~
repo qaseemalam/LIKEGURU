@@ -1,5 +1,0 @@
-<h3>Please Login or Varify your Facebook Account</h3>
-
-<fb:login-button onlogin='window.location="/facebooks/login"' perms="email" size="large" ></fb:login-button>
-
- 

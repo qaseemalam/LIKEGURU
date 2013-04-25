@@ -1,5 +1,0 @@
-<h1><b>Facebook App Disclaimer</b></h1>
-<h6><p>This Facebook application will store your basic Facebook information for staistical purpose only. It will be used to prove the concept of "How the Social Networks are effected in the field of Marketing" through this app's databse.</p>
- Your data will be treated in the strickly confidence and will not be  provided to any other third party vendors. </p>
-<p>If you are agree with above statement so please click on "Continue" button for process otherwise close the browser's tab.</P> </h6>
-<%= button_to "Continue", :controller => "fbusers", :action => "home" %>
