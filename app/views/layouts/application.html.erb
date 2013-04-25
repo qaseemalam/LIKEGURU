@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Fbanalyze</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <%= stylesheet_link_tag    "style" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+<div id="fb-root"></div>
+        <script>
+          //initializing API
+          window.fbAsyncInit = function() {
+            FB.init({appId: '299820546737065', status: true, cookie: true,
+                     xfbml: true});
+          };
+          (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol +
+              '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+          }());
+        </script>
+
+
+
+        <script>
+          //your fb login function
+          function fblogin() {
+            FB.login(function(response) {
+              
+              location.href = "/fcont/login";
+            });
+
+          }
+        </script>
+
+</head>
+<body>
+<div id="header">
+<div id="logo">
+	<h1> Like Guru </h1>
+        <h2> MSc Deissertation </h2>
+	
+</div>
+</div>
+<div id="menu-wrap">
+<div id="menu">
+	<ul>
+	<li class="first"><a href="/fcont/login" accesskey="1" title="">Homepage</a></li>
+	<li><a href="#" accesskey="2" title="">About Us</a></li>
+	<li><a href="#" accesskey="3" title="">Contact Us</a></li>
+        </ul>
+</div>
+</div>
+
+<hr />
+<div id="content">
+<h3><%= yield %><h3>
+</div>
+<hr />
+<div id="footer">
+	<p class="legal">2012 All Rights Reserved. Designed by Qaseem</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h5> Facebook Page Category wise </h5>
+<h2>  </h2>
+
+<table border=1 color='ffffff' alignment=right>
+  <tr>
+    <th></th>
+    <th></th>
+    <th>  Category  </th>
+    <th>   # of Pages      </th>
+    <th></th>
+    <th></th>
+    
+  </tr>
+
+<% @dat2.each do |dat| %>
+<tr>
+<th></th>
+    <th></th>
+<td> <h3>
+<%= link_to dat[0], :controller => "fbusers", :action => "fpage", :fbcat => dat[0] %>
+</h3> </td> 
+<h1><b><td> <%= dat[1] %> </td> </b></h1>
+<th></th>
+    <th></th>
+</tr>
+<% end %>
+
+</table>

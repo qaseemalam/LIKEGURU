@@ -1,0 +1,4 @@
+<img src="/toppeople" height="300" width="500" alt="My Graph1">
+
+<h2><p><%= link_to "Find the most popular pages", :controller => "fbusers", :action => "check" %></p><h2>
+<h2><p><%= link_to "More information about people like", :controller => "fbusers", :action => "fballlike" %></p></h2>

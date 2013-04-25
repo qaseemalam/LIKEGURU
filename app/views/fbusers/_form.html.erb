@@ -1,0 +1,33 @@
+<%= form_for(@fbuser) do |f| %>
+  <% if @fbuser.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fbuser.errors.count, "error") %> prohibited this fbuser from being saved:</h2>
+
+      <ul>
+      <% @fbuser.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :User_Id %><br />
+    <%= f.text_field :User_Id %>
+  </div>
+  <div class="field">
+    <%= f.label :User_Name %><br />
+    <%= f.text_field :User_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :User_Email %><br />
+    <%= f.text_field :User_Email %>
+  </div>
+  <div class="field">
+    <%= f.label :Image_Ref %><br />
+    <%= f.text_field :Image_Ref %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

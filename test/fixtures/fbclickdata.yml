@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Like_Id: MyString
+  Like_category: MyString
+
+two:
+  Like_Id: MyString
+  Like_category: MyString

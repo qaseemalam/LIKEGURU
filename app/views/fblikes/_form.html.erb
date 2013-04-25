@@ -1,0 +1,33 @@
+<%= form_for(@fblike) do |f| %>
+  <% if @fblike.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fblike.errors.count, "error") %> prohibited this fblike from being saved:</h2>
+
+      <ul>
+      <% @fblike.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :User_Id %><br />
+    <%= f.text_field :User_Id %>
+  </div>
+  <div class="field">
+    <%= f.label :Like_Id %><br />
+    <%= f.text_field :Like_Id %>
+  </div>
+  <div class="field">
+    <%= f.label :Like_Name %><br />
+    <%= f.text_field :Like_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Like_Category %><br />
+    <%= f.text_field :Like_Category %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

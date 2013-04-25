@@ -1,0 +1,22 @@
+<div align="center">
+
+<div style="float:left" id="img.aligntop"><img src="<%= @pict %>"> Welcome <%= @result["name"] %>
+</div>
+
+<div style="float:right" class="fb-like" data-href="http://apps.facebook.com/testshaka" data-send="false" data-width="450" data-show-faces="false"></div>
+
+<div style="clear: both;"></div>
+<div align="left">
+<%= @face.html_safe %>
+</div>
+<img src="/fbusers/show" height="300" width="500" alt="My Graph">
+
+<p><h4><%= link_to "Check it out! What the people like Top 10", :controller => "fbusers", :action => "fbpeople" %></p></h4>
+
+
+
+<br/>
+
+<br/>
+
+

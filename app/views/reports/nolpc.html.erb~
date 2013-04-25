@@ -1,0 +1,4 @@
+<h1>Report<h1>
+<p>Find me in app/views/reports/nolpc.html.erb</p>
+<p><h2> Total no. of Click <b> <%= @dat2 %> </b></p>
+<img src="/nolpc1" height="400" width="600" alt="My Graph">
